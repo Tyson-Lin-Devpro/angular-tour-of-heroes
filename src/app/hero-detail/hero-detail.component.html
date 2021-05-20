@@ -1,0 +1,10 @@
+<div *ngIf="hero"> <!--*ngif 有值才會顯示出來 沒有則不顯示-->
+  <!-- 轉大寫的管道運算子 uppercase -->
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+
+</div>
