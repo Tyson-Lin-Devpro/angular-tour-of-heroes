@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 //手動匯入component要在這添加import
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent
     //手動匯入component要在這添加
   ],
   imports: [
