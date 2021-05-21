@@ -27,11 +27,11 @@
 
 - <xxx (event)="functionName(element)"></xxx> :
   1.ng事件綁定寫法
-  2.event可以是
-    (1)click:點擊事件
-    (2)keyup:輸入事件
-    (3)keyup.enter:輸入完點擊enter事件
-    (4)blur:失去焦點事件
+  2.event可以是  
+    (1)click:點擊事件  
+    (2)keyup:輸入事件  
+    (3)keyup.enter:輸入完點擊enter事件  
+    (4)blur:失去焦點事件  
 
 - <xxx *ngIf="變數名"></xxx> :
   1.如果變數有'值'存在則顯示，不存在則不會顯示
