@@ -52,7 +52,7 @@
   1.提供一個可注入的服務  
   2.這裡是將服務注入到root裡  
 
-- constructor(private heroService: HeroService) {}:
+- constructor(private heroService: HeroService) {}:  
   1.在建構函式新增一個私有的service並宣告型別為HeroService  
   2.將HeroService標記為一個注入點  
 
