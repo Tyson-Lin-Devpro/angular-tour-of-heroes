@@ -2,25 +2,25 @@
 
 ## Angular CLI 指令
 
-- ng new <專案名稱> - 快速創建新ng專案
-- ng server --open - 啟動ng應用伺服器
-- ng generate component <component名稱> - 創建component並自動導入專案 (簡化指令 ng g c <component名稱>)
-- ng generate service <service名稱> - 快速建立service (簡化指令 ng g s <service名稱>)
-
+- ng new <專案名稱> : 快速創建新ng專案  
+- ng server --open : 啟動ng應用伺服器  
+- ng generate component <component名稱> : 創建component並自動導入專案 (簡化指令 ng g c <component名稱>)  
+- ng generate service <service名稱> : 快速建立service (簡化指令 ng g s <service名稱>)  
+- ng generate module app-routing --flat --module=app : 快速鍵立路由鏈結檔案(routerLink)  
 
 ## 1.英雄編輯器
 
-- @Component:
-  1.selector:在模板導入的名稱(小寫)，ex. <app-heroes></app-heroes>
-  2.templateUrl:使用的模板檔案的位置 ( 寫法 'url路徑.html')
-  3.styleUrls:模板獨立的css樣式表位置 ( 寫法 ['url路徑.css'] )
+- @Component:  
+  1.selector:在模板導入的名稱(小寫)，ex. <app-heroes></app-heroes>  
+  2.templateUrl:使用的模板檔案的位置 ( 寫法 'url路徑.html')  
+  3.styleUrls:模板獨立的css樣式表位置 ( 寫法 ['url路徑.css'] )  
 
 - <input [(ngModel)]="xxx"></input>  
   1.使用於<input>標籤裡雙向綁定(two-way data binding syntax)  
   2.不是預設module，須要在app.module.ts中import並加入import:{}裡  
 
 
-## 2.顯示英雄列表
+## 2.顯示英雄列表  
 
 - <xxx *ngFor="let arrayElement of arrayName}"></xxx> :  
   1.ng裡遍歷的語法，直接加在標籤裡  
@@ -75,6 +75,12 @@
         .subscribe(heroes => this.heroes = heroes);  
   }  
 
-## 5.新增導航
+## 5.新增導航(routing)
+- ng generate module app-routing --flat --module=app :快速鍵立路由檔案  
+- <a routerLink="/heroes">Heroes</a> - 路由鏈結寫法  
+- path 中的冒號（:）表示 :id 是一個佔位符，它表示某個特定英雄的 id，ex.  
+  { path: 'detail/:id', component: HeroDetailComponent }  
+- 在 AppRoutingModule 中配置了路由器  
+- 
 
 
